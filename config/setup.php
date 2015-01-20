@@ -11,7 +11,7 @@
 	include('functions/data.php');
 	include('functions/template.php');
 	
-	$site_title = 'Dynamic Website';
+	$site_title = 'FriendsDairy WebApps';
 	
 	if(isset($_GET['page'])){
 		$pageid = $_GET['page'];//set the $pageid to equal to the value of the URL
