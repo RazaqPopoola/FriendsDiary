@@ -17,22 +17,38 @@
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		
 
-	<style>
-			html {
-			  position: relative;
-			  min-height: 100%;
-			}
-			body {
-			  /* Margin bottom by footer height */
-			  margin-bottom: 60px;
-			}
-			.footer {
-			  position: absolute;
-			  bottom: 0;
-			  width: 100%;
-			  /* Set the fixed height of the footer here */
-			  height: 60px;
-			  background-color: #f5f5f5;
-			}
-						
-		</style>
+<style>
+	html{
+			position: relative;
+			min-height: 100%;
+		}
+	body{
+			/* Margin bottom by footer height */
+			margin-bottom: 60px;
+		}
+	.footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			/* Set the fixed height of the footer here */
+			height: 60px;
+			background-color: #f5f5f5;
+		}
+				
+	#btn-debug{
+			position: absolute;
+		}
+		
+	#console-debug{
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		width: 30%;
+		height: 700px;
+	}	
+	
+	#console-debug pre{
+		height: 700px;
+		overflow-y: scroll;
+	}							
+</style>

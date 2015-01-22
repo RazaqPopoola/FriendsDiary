@@ -11,19 +11,29 @@
 	</head>
 	
 	<body>
-		
-		<?php include(D_TEMPLATE.'/navigation.php'); ?>
-			
-			<div class="container">
+		<div id="wrap">
+			<?php include(D_TEMPLATE.'/navigation.php'); ?>
 				
-				<i class=" fa fa-fax fax 5x"></i>
-				<i class="fa fa-university"></i>
+				<div class="container">
+					
+					<i class=" fa fa-fax fax 5x"></i>
+					<i class="fa fa-university"></i>
+				
+					<h1><?php echo $page['header']; ?></h1>
+					
+					<?php echo $page['body_formatted']; ?>
+					
+									
+				</div><!-- End container -->
+				
+			</div><!--- End wrap -->
 			
-				<h1><?php echo $page['header']; ?></h1>
-				<?php echo $page['body_formatted']; ?>
-			</div><!-- End container -->
+			<?php include(D_TEMPLATE.'/footer.php'); ?>
 		
-		 <?php include(D_TEMPLATE.'/footer.php'); ?>
-			
+		<div id="console-debug">
+			<pre>
+						<?php print_r($page); ?>
+					</pre>	
+		</div>	
 	</body>
 </html>
