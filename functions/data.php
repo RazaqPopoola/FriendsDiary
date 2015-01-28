@@ -2,7 +2,7 @@
 	
 	function data_setting_value($dbc, $id){
 		
-		$quary = "SELCT * FROM sttings WHERE id = '$id'";
+		$quary = "SELECT * FROM settings WHERE id = '$id'";
 		$result = mysqli_query($dbc, $quary);
 		
 		$data = mysqli_fetch_assoc($result);

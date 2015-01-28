@@ -23,17 +23,14 @@
 					
 					<?php echo $page['body_formatted']; ?>
 					
-									
+					
 				</div><!-- End container -->
 				
-			</div><!--- End wrap -->
+		</div><!--- End wrap -->
 			
-			<?php include(D_TEMPLATE.'/footer.php'); ?>
+		<?php include(D_TEMPLATE.'/footer.php'); ?>
 		
-		<div id="console-debug">
-			<pre>
-						<?php print_r($page); ?>
-					</pre>	
-		</div>	
+		<?php if($debug == 1) { include('widget/debug.php'); }	?>
+		
 	</body>
 </html>

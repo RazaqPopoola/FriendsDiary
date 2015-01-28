@@ -12,7 +12,7 @@
 	include('functions/template.php');
 	
 	#site setup
-	$debug = data_setting_value($dbc, '$debug-status');
+	$debug = data_setting_value($dbc, 'debug-status');
 	
 	$site_title = 'FriendsDairy WebApps';
 	
