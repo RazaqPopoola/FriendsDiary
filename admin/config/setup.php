@@ -2,7 +2,7 @@
 	//setup files
 
 	//Database connection
-	include('config/connection.php'); 
+	include('../config/connection.php'); 
 	
 	# Constants:
 	DEFINE('D_TEMPLATE', 'template');
