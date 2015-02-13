@@ -36,8 +36,10 @@
 		}
 				
 	#btn-debug{
+		/*
 			position: absolute;
 			right: 5px;
+			*/
 		}
 		
 	#console-debug{

@@ -25,5 +25,10 @@
 		//page setup
 		$page = data_page($dbc, $pageid);
 		
-		
+	//show who log in in the help to logout if desire
+	$query = "SELECT * FROM members WHERE email = '$_SESSION[username]'";	
+	$result = mysqli_query($dbc, $query);
+	
+	$member = mysqli_fetch_assoc($result);
+	
 ?>
