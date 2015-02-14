@@ -22,13 +22,11 @@
 		$pageid = 1; //Set $pageid to equal to 1 or home page
 	}
 	
-		//page setup
-		$page = data_page($dbc, $pageid);
+	//page setup
+	$page = data_page($dbc, $pageid);
 		
-	//show who log in in the help to logout if desire
-	$query = "SELECT * FROM members WHERE email = '$_SESSION[username]'";	
-	$result = mysqli_query($dbc, $query);
+	//User Setup
+	$user = data_user($dbc, $_SESSION['username']);
 	
-	$member = mysqli_fetch_assoc($result);
 	
 ?>

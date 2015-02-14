@@ -22,7 +22,7 @@
 					<?php } ?>	
 				</li>
 				<li class="dropdown"> 
-					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $member['firstn']. ' ' .$member['lastn']; ?><b class="caret"></b></a>
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $user['fullname']; ?> <b class="caret"></b></a>
 					 <ul class="dropdown-menu" role="menu">
 					 	<li><a href="logout.php">Logout</a></li>
 					  </ul>

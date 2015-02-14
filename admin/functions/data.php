@@ -11,6 +11,20 @@
 
 	}
 	
+	function data_user($dbc, $id){
+		
+		$query = "SELECT * FROM members WHERE email = '$id'";	
+		$result = mysqli_query($dbc, $query);
+	
+		$data = mysqli_fetch_assoc($result);
+		
+		$data['fullname'] = $data['firstn'].' ' .$data['lastn'];
+		$data['fullname_reverse'] = $data['lastn'].' ' .$data['firstn'];
+		
+		return $data;
+	}
+	
+	
 	function data_page($dbc, $id){
 		
 	

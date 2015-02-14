@@ -11,6 +11,10 @@
 
 	}
 	
+	
+	
+	
+	
 	function data_page($dbc, $id){
 		
 	
@@ -26,8 +30,6 @@
 		}else{
 			$data['body_formatted'] = $data['body'];
 		}
-			
-		
 		
 		return  $data;
 	}
